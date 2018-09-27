@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ec2:DescribeReservedInstances",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "sns:Publish",
+            "Resource": "arn:aws:sns:<Region>:<AccountId>:<Topic>"
+        }
+    ]
+}
