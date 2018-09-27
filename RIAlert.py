@@ -18,7 +18,8 @@ def lambda_handler(event, context):
 
     expiringRIs = []
     
-        indays = [x.strip() for x in os.environ["expireDaysAfter"].split(",")]
+    indays = [x.strip() for x in os.environ["expireDaysAfter"].split(",")]
+    
     for inday in indays:
         currentTime = datetime.datetime.now(datetime.timezone.utc)
         checkDate = currentTime + datetime.timedelta(days =+ int(inday))
