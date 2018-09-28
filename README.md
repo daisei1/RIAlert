@@ -26,6 +26,6 @@ See a sample policy. (RIAlertPolicy.json)
 
 - Create Policy
 - Create Role
-- Create Lambda function with three Environment Variable aboce
+- Create Lambda function with three Environment Variable above
 - You can call this lambda function periodically via CloudWatch Event
 cron or rate configuration.
